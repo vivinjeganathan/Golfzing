@@ -58,7 +58,7 @@ class GLFHomeVC: UIViewController, GLFMapViewHelperDelegate, GLFCollectionViewDe
     
     func didSelectGolfCourse(golfCourseDomain: GLFGolfCourseDomain)
     {
-        _ = mapViewHelper.mapView(mapView, didTap: golfCourseDomain.associatedMakerDomain)
+        mapViewHelper.changeViewsForSelectedMarker(mapView: mapView, marker: golfCourseDomain.associatedMakerDomain)
     }
     
     override func didReceiveMemoryWarning() {

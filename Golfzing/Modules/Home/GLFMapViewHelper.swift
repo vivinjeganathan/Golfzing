@@ -36,6 +36,13 @@ class GLFMapViewHelper: NSObject, GMSMapViewDelegate
             }
         }
         
+        changeViewsForSelectedMarker(mapView: mapView, marker: marker)
+        
+        return true
+    }
+    
+    func changeViewsForSelectedMarker(mapView: GMSMapView, marker: GMSMarker)
+    {
         if let selectedMarker = mapView.selectedMarker
         {
             (selectedMarker.iconView as? GLFMarkerView)?.loadImage(isMarkerSelected: false)
@@ -43,7 +50,5 @@ class GLFMapViewHelper: NSObject, GMSMapViewDelegate
         
         mapView.selectedMarker = marker
         (mapView.selectedMarker?.iconView as? GLFMarkerView)?.loadImage(isMarkerSelected: true)
-        
-        return true
     }
 }

@@ -16,7 +16,7 @@ class GLFGolfCourseDetailsCell: UICollectionViewCell
     @IBOutlet weak var ratePerHourLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var ratingImage: UIImageView!
+    @IBOutlet weak var ratingsView: UIView!
     @IBOutlet weak var golfzingStarRatedImage: UIImageView!
     
     var golfCourseDomain : GLFGolfCourseDomain!
@@ -33,6 +33,8 @@ class GLFGolfCourseDetailsCell: UICollectionViewCell
         loadGolfCourseImage()
         
         golfzingStarRatedImage.isHidden = golfCourseDomain.isGolfzingStarRated == true ? true : false
+        
+        addRatingStars(numberOfStars: Int(golfCourseDomain.rating)!)
     }
     
     func loadGolfCourseImage()
@@ -60,6 +62,22 @@ class GLFGolfCourseDetailsCell: UICollectionViewCell
     
     func addRatingStars(numberOfStars : Int)
     {
-        
+        for i in 0...(numberOfStars - 1)
+        {
+            let starImageView = UIImageView(image: UIImage(named: "StarSelected"))
+            starImageView.translatesAutoresizingMaskIntoConstraints = false
+            ratingsView.addSubview(starImageView)
+            
+            starImageView.widthAnchor.constraint(equalToConstant: 10).isActive = true
+            starImageView.heightAnchor.constraint(equalToConstant: 10).isActive = true
+            
+            let leadingSpace = CGFloat(10 * i)
+            
+            NSLayoutConstraint(item: starImageView, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: ratingsView, attribute: NSLayoutAttribute.leading, multiplier: 1.0, constant: leadingSpace).isActive = true
+            
+            NSLayoutConstraint(item: starImageView, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: ratingsView, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: 0).isActive = true
+            
+            NSLayoutConstraint(item: starImageView, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: ratingsView, attribute: NSLayoutAttribute.bottom, multiplier: 1.0, constant: 0).isActive = true
+        }
     }
 }

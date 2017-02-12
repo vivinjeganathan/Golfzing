@@ -25,7 +25,7 @@
 			<key>ratePerHour</key>
 			<string>$35</string>
 			<key>rating</key>
-			<integer>5</integer>
+			<string>5</string>
 			<key>golfZingStarRated</key>
 			<true/>
 		</dict>
@@ -75,7 +75,7 @@
 			<key>ratePerHour</key>
 			<string>$20</string>
 			<key>rating</key>
-			<integer>5</integer>
+			<string>3</string>
 			<key>golfZingStarRated</key>
 			<true/>
 		</dict>
@@ -100,7 +100,7 @@
 			<key>ratePerHour</key>
 			<string>$50</string>
 			<key>rating</key>
-			<integer>5</integer>
+			<string>5</string>
 			<key>golfZingStarRated</key>
 			<false/>
 		</dict>
@@ -125,7 +125,7 @@
 			<key>ratePerHour</key>
 			<string>$50</string>
 			<key>rating</key>
-			<integer>5</integer>
+			<string>3</string>
 			<key>golfZingStarRated</key>
 			<false/>
 		</dict>
@@ -150,7 +150,7 @@
 			<key>ratePerHour</key>
 			<string>$20</string>
 			<key>rating</key>
-			<integer>5</integer>
+			<string>4</string>
 			<key>golfZingStarRated</key>
 			<false/>
 		</dict>
@@ -175,7 +175,7 @@
 			<key>ratePerHour</key>
 			<string>$50</string>
 			<key>rating</key>
-			<integer>5</integer>
+			<string>2</string>
 			<key>golfZingStarRated</key>
 			<true/>
 		</dict>
@@ -200,7 +200,7 @@
 			<key>ratePerHour</key>
 			<string>$25</string>
 			<key>rating</key>
-			<integer>5</integer>
+			<string>3</string>
 			<key>golfZingStarRated</key>
 			<true/>
 		</dict>
@@ -225,7 +225,7 @@
 			<key>ratePerHour</key>
 			<string>$50</string>
 			<key>rating</key>
-			<integer>5</integer>
+			<string>4</string>
 			<key>golfZingStarRated</key>
 			<false/>
 		</dict>
@@ -250,7 +250,7 @@
 			<key>ratePerHour</key>
 			<string>$10</string>
 			<key>rating</key>
-			<integer>5</integer>
+			<string>1</string>
 			<key>golfZingStarRated</key>
 			<false/>
 		</dict>
