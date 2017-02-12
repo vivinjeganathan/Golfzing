@@ -58,6 +58,7 @@ class GLFHomeCollectionViewHelper: NSObject, UICollectionViewDataSource, UIColle
     {
         let golfCourseDomain = homeDomain.golfCoursesArray[indexPath.row]
         collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        
         delegate.didSelectGolfCourse(golfCourseDomain: golfCourseDomain)
     }
 }

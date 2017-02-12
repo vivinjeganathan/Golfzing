@@ -30,11 +30,10 @@ class GLFGolfCourseDetailsCell: UICollectionViewCell
         spanLabel.text = golfCourseDomain.span
         ratePerHourLabel.text = golfCourseDomain.ratePerHour
         
-        loadGolfCourseImage()
-        
         golfzingStarRatedImage.isHidden = golfCourseDomain.isGolfzingStarRated == true ? true : false
         
-        addRatingStars(numberOfStars: Int(golfCourseDomain.rating)!)
+        loadGolfCourseImage()
+        addRatingStars()
     }
     
     func loadGolfCourseImage()
@@ -60,8 +59,10 @@ class GLFGolfCourseDetailsCell: UICollectionViewCell
         }
     }
     
-    func addRatingStars(numberOfStars : Int)
+    func addRatingStars()
     {
+        let numberOfStars = Int(golfCourseDomain.rating)!
+        
         for i in 0...(numberOfStars - 1)
         {
             let starImageView = UIImageView(image: UIImage(named: "StarSelected"))

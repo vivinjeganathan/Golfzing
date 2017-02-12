@@ -16,6 +16,7 @@ class GLFHomeVC: UIViewController, GLFMapViewHelperDelegate, GLFCollectionViewDe
     @IBOutlet weak var addressTextField : UITextField!
     
     let homeDomain = GLFManager.loadGLFHomeDomain()!
+    
     var collectionViewHelper : GLFHomeCollectionViewHelper!
     var mapViewHelper : GLFMapViewHelper!
     
@@ -51,18 +52,15 @@ class GLFHomeVC: UIViewController, GLFMapViewHelperDelegate, GLFCollectionViewDe
         titleLabel.attributedText = string
     }
     
+    // MARK: - GLF MAPVIEW HELPER DELEGATE METHODS
     func userTappedItem(at indexPath: IndexPath)
     {
         courtsCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
     
+    // MARK: - GLF COLLECTION VIEW HELPER DELEGATE METHODS
     func didSelectGolfCourse(golfCourseDomain: GLFGolfCourseDomain)
     {
         mapViewHelper.changeViewsForSelectedMarker(mapView: mapView, marker: golfCourseDomain.associatedMakerDomain)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
