@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GolfCourses</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<string>GLF001</string>
+			<key>name</key>
+			<string>Mangaluru Golf Club</string>
+			<key>address</key>
+			<string>Goa</string>
+			<key>span</key>
+			<string>2 mi</string>
+			<key>location</key>
+			<dict>
+				<key>latitude</key>
+				<string>12.914142</string>
+				<key>longitude</key>
+				<string>74.855957</string>
+			</dict>
+			<key>imageURL</key>
+			<string>http://ff-f22-staging.s3.dualstack.us-west-2.amazonaws.com/2017-01-17-08-37-19-11982.png</string>
+			<key>ratePerHour</key>
+			<string>$35</string>
+			<key>rating</key>
+			<integer>5</integer>
+			<key>golfZingStarRated</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>GLF002</string>
+			<key>name</key>
+			<string>Bengaluru Presidency Golf Club</string>
+			<key>address</key>
+			<string>Karnataka</string>
+			<key>span</key>
+			<string>3 mi</string>
+			<key>location</key>
+			<dict>
+				<key>latitude</key>
+				<string>13.055065</string>
+				<key>longitude</key>
+				<string>77.667847</string>
+			</dict>
+			<key>imageURL</key>
+			<string>http://ff-f22-staging.s3.dualstack.us-west-2.amazonaws.com/2017-01-17-08-37-19-11982.png</string>
+			<key>ratePerHour</key>
+			<string>$30</string>
+			<key>rating</key>
+			<string>4</string>
+			<key>golfZingStarRated</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>GLF003</string>
+			<key>name</key>
+			<string>Coimbatore Golf Club</string>
+			<key>address</key>
+			<string>TamilNadu</string>
+			<key>span</key>
+			<string>5 mi</string>
+			<key>location</key>
+			<dict>
+				<key>latitude</key>
+				<string>11.0168445</string>
+				<key>longitude</key>
+				<string>76.9558321</string>
+			</dict>
+			<key>imageURL</key>
+			<string>http://ff-f22-staging.s3.dualstack.us-west-2.amazonaws.com/2017-01-17-08-37-19-11982.png</string>
+			<key>ratePerHour</key>
+			<string>$20</string>
+			<key>rating</key>
+			<integer>5</integer>
+			<key>golfZingStarRated</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>GLF004</string>
+			<key>name</key>
+			<string>Cosmopolitan Club</string>
+			<key>address</key>
+			<string>Chennai</string>
+			<key>span</key>
+			<string>2 mi</string>
+			<key>location</key>
+			<dict>
+				<key>latitude</key>
+				<string>13.0826802</string>
+				<key>longitude</key>
+				<string>80.2707184</string>
+			</dict>
+			<key>imageURL</key>
+			<string>http://ff-f22-staging.s3.dualstack.us-west-2.amazonaws.com/2017-01-17-08-37-19-11982.png</string>
+			<key>ratePerHour</key>
+			<string>$50</string>
+			<key>rating</key>
+			<integer>5</integer>
+			<key>golfZingStarRated</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>GLF005</string>
+			<key>name</key>
+			<string>Mysuru Golf Club</string>
+			<key>address</key>
+			<string>Karnataka</string>
+			<key>span</key>
+			<string>1 mi</string>
+			<key>location</key>
+			<dict>
+				<key>latitude</key>
+				<string>12.369179</string>
+				<key>longitude</key>
+				<string>76.558228</string>
+			</dict>
+			<key>imageURL</key>
+			<string>http://ff-f22-staging.s3.dualstack.us-west-2.amazonaws.com/2017-01-17-08-37-19-11982.png</string>
+			<key>ratePerHour</key>
+			<string>$50</string>
+			<key>rating</key>
+			<integer>5</integer>
+			<key>golfZingStarRated</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>GLF006</string>
+			<key>name</key>
+			<string>Guindy Links</string>
+			<key>address</key>
+			<string>Chennai</string>
+			<key>span</key>
+			<string>1 mi</string>
+			<key>location</key>
+			<dict>
+				<key>latitude</key>
+				<string>13.0826802</string>
+				<key>longitude</key>
+				<string>80.2707184</string>
+			</dict>
+			<key>imageURL</key>
+			<string>http://ff-f22-staging.s3.dualstack.us-west-2.amazonaws.com/2017-01-17-08-37-19-11982.png</string>
+			<key>ratePerHour</key>
+			<string>$20</string>
+			<key>rating</key>
+			<integer>5</integer>
+			<key>golfZingStarRated</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>GLF007</string>
+			<key>name</key>
+			<string>Hyderabad Golf Club</string>
+			<key>address</key>
+			<string>Hyderabad</string>
+			<key>span</key>
+			<string>3 mi</string>
+			<key>location</key>
+			<dict>
+				<key>latitude</key>
+				<string>14.6818877</string>
+				<key>longitude</key>
+				<string>77.6005911</string>
+			</dict>
+			<key>imageURL</key>
+			<string>http://ff-f22-staging.s3.dualstack.us-west-2.amazonaws.com/2017-01-17-08-37-19-11982.png</string>
+			<key>ratePerHour</key>
+			<string>$50</string>
+			<key>rating</key>
+			<integer>5</integer>
+			<key>golfZingStarRated</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>GLF008</string>
+			<key>name</key>
+			<string>ITC Grand Bharat</string>
+			<key>address</key>
+			<string>Kozhikode</string>
+			<key>span</key>
+			<string>4 mi</string>
+			<key>location</key>
+			<dict>
+				<key>latitude</key>
+				<string>11.304678</string>
+				<key>longitude</key>
+				<string>75.833130</string>
+			</dict>
+			<key>imageURL</key>
+			<string>http://ff-f22-staging.s3.dualstack.us-west-2.amazonaws.com/2017-01-17-08-37-19-11982.png</string>
+			<key>ratePerHour</key>
+			<string>$25</string>
+			<key>rating</key>
+			<integer>5</integer>
+			<key>golfZingStarRated</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>GLF009</string>
+			<key>name</key>
+			<string>Kodaikanal Golf Club</string>
+			<key>address</key>
+			<string>TamilNadu</string>
+			<key>span</key>
+			<string>1 mi</string>
+			<key>location</key>
+			<dict>
+				<key>latitude</key>
+				<string>11.744699</string>
+				<key>longitude</key>
+				<string>79.7680243</string>
+			</dict>
+			<key>imageURL</key>
+			<string>http://ff-f22-staging.s3.dualstack.us-west-2.amazonaws.com/2017-01-17-08-37-19-11982.png</string>
+			<key>ratePerHour</key>
+			<string>$50</string>
+			<key>rating</key>
+			<integer>5</integer>
+			<key>golfZingStarRated</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>GLF010</string>
+			<key>name</key>
+			<string>Hanur Golf Club</string>
+			<key>address</key>
+			<string>Kerala</string>
+			<key>span</key>
+			<string>1 mi</string>
+			<key>location</key>
+			<dict>
+				<key>latitude</key>
+				<string>12.070797</string>
+				<key>longitude</key>
+				<string>77.323151</string>
+			</dict>
+			<key>imageURL</key>
+			<string>http://ff-f22-staging.s3.dualstack.us-west-2.amazonaws.com/2017-01-17-08-37-19-11982.png</string>
+			<key>ratePerHour</key>
+			<string>$10</string>
+			<key>rating</key>
+			<integer>5</integer>
+			<key>golfZingStarRated</key>
+			<false/>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		318CB46EBC9A9C695998300F /* Pods_Golfzing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD6C299D83485FE8CF3C4AD /* Pods_Golfzing.framework */; };
+		B44CB78D1E4D85E100E22B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44CB7871E4D85E100E22B93 /* Assets.xcassets */; };
+		B44CB78E1E4D85E100E22B93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44CB7881E4D85E100E22B93 /* LaunchScreen.storyboard */; };
+		B44CB78F1E4D85E100E22B93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44CB78A1E4D85E100E22B93 /* Main.storyboard */; };
+		B44CB7921E4D861000E22B93 /* GLFHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44CB7911E4D861000E22B93 /* GLFHomeVC.swift */; };
+		B44CB7941E4D863C00E22B93 /* GLFHomeDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44CB7931E4D863C00E22B93 /* GLFHomeDomain.swift */; };
+		B44CB7961E4D865000E22B93 /* GLFHomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44CB7951E4D865000E22B93 /* GLFHomeManager.swift */; };
+		B44CB7981E4D868400E22B93 /* GLFMockData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B44CB7971E4D868400E22B93 /* GLFMockData.plist */; };
+		B44CB79B1E4D873A00E22B93 /* GLFManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44CB79A1E4D873A00E22B93 /* GLFManager.swift */; };
+		B44CB79D1E4D874F00E22B93 /* GLFUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44CB79C1E4D874F00E22B93 /* GLFUtils.swift */; };
+		B45489AC1E501B4A00BC75CE /* GLFHomeCollectionViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45489AB1E501B4A00BC75CE /* GLFHomeCollectionViewHelper.swift */; };
+		B45489AE1E501B7700BC75CE /* GLFMapViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45489AD1E501B7700BC75CE /* GLFMapViewHelper.swift */; };
+		B45489B01E502E7B00BC75CE /* GLFMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45489AF1E502E7B00BC75CE /* GLFMarkerView.xib */; };
+		B46D36DF1E4B6C0C00556F69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D36DE1E4B6C0C00556F69 /* AppDelegate.swift */; };
+		B46D36F41E4B6C0C00556F69 /* GolfzingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D36F31E4B6C0C00556F69 /* GolfzingTests.swift */; };
+		B49FDFD71E4D95C7002FAFAD /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B49FDFCE1E4D95C7002FAFAD /* Montserrat-Black.otf */; };
+		B49FDFD81E4D95C7002FAFAD /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B49FDFCF1E4D95C7002FAFAD /* Montserrat-Bold.otf */; };
+		B49FDFD91E4D95C7002FAFAD /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B49FDFD01E4D95C7002FAFAD /* Montserrat-ExtraBold.otf */; };
+		B49FDFDA1E4D95C7002FAFAD /* Montserrat-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = B49FDFD11E4D95C7002FAFAD /* Montserrat-Hairline.otf */; };
+		B49FDFDB1E4D95C7002FAFAD /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B49FDFD21E4D95C7002FAFAD /* Montserrat-Light.otf */; };
+		B49FDFDC1E4D95C7002FAFAD /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B49FDFD31E4D95C7002FAFAD /* Montserrat-Regular.otf */; };
+		B49FDFDD1E4D95C7002FAFAD /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B49FDFD41E4D95C7002FAFAD /* Montserrat-SemiBold.otf */; };
+		B49FDFDE1E4D95C7002FAFAD /* Montserrat-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = B49FDFD51E4D95C7002FAFAD /* Montserrat-UltraLight.otf */; };
+		B49FDFDF1E4D95C7002FAFAD /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = B49FDFD61E4D95C7002FAFAD /* SIL Open Font License.txt */; };
+		B49FDFE31E4DCBF0002FAFAD /* GLFMarkerDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49FDFE21E4DCBF0002FAFAD /* GLFMarkerDomain.swift */; };
+		B49FDFE71E4F592F002FAFAD /* GLFGolfCourseDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49FDFE61E4F592F002FAFAD /* GLFGolfCourseDetailsCell.swift */; };
+		B4E882C81E506A17001FC7C0 /* GLFNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E882C71E506A17001FC7C0 /* GLFNetworkHelper.swift */; };
+		B4E882CB1E5087D0001FC7C0 /* GLFMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E882CA1E5087D0001FC7C0 /* GLFMarkerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B46D36F01E4B6C0C00556F69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B46D36D31E4B6C0B00556F69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B46D36DA1E4B6C0C00556F69;
+			remoteInfo = Golfzing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C884E303792C1B60DB7B1FC /* Pods-Golfzing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golfzing.release.xcconfig"; path = "Pods/Target Support Files/Pods-Golfzing/Pods-Golfzing.release.xcconfig"; sourceTree = "<group>"; };
+		4DD6C299D83485FE8CF3C4AD /* Pods_Golfzing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Golfzing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B503A5D8C12B06FF9E213D /* Pods-Golfzing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golfzing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Golfzing/Pods-Golfzing.debug.xcconfig"; sourceTree = "<group>"; };
+		B44CB7771E4C46CD00E22B93 /* Golfzing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Golfzing-Bridging-Header.h"; sourceTree = "<group>"; };
+		B44CB7871E4D85E100E22B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B44CB7891E4D85E100E22B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B44CB78B1E4D85E100E22B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B44CB7911E4D861000E22B93 /* GLFHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLFHomeVC.swift; sourceTree = "<group>"; };
+		B44CB7931E4D863C00E22B93 /* GLFHomeDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLFHomeDomain.swift; sourceTree = "<group>"; };
+		B44CB7951E4D865000E22B93 /* GLFHomeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLFHomeManager.swift; sourceTree = "<group>"; };
+		B44CB7971E4D868400E22B93 /* GLFMockData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GLFMockData.plist; sourceTree = "<group>"; };
+		B44CB79A1E4D873A00E22B93 /* GLFManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLFManager.swift; sourceTree = "<group>"; };
+		B44CB79C1E4D874F00E22B93 /* GLFUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLFUtils.swift; sourceTree = "<group>"; };
+		B45489AB1E501B4A00BC75CE /* GLFHomeCollectionViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLFHomeCollectionViewHelper.swift; sourceTree = "<group>"; };
+		B45489AD1E501B7700BC75CE /* GLFMapViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLFMapViewHelper.swift; sourceTree = "<group>"; };
+		B45489AF1E502E7B00BC75CE /* GLFMarkerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLFMarkerView.xib; sourceTree = "<group>"; };
+		B46D36DB1E4B6C0C00556F69 /* Golfzing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Golfzing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B46D36DE1E4B6C0C00556F69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B46D36EA1E4B6C0C00556F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B46D36EF1E4B6C0C00556F69 /* GolfzingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfzingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B46D36F31E4B6C0C00556F69 /* GolfzingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfzingTests.swift; sourceTree = "<group>"; };
+		B46D36F51E4B6C0C00556F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49FDFCE1E4D95C7002FAFAD /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.otf"; sourceTree = "<group>"; };
+		B49FDFCF1E4D95C7002FAFAD /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		B49FDFD01E4D95C7002FAFAD /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
+		B49FDFD11E4D95C7002FAFAD /* Montserrat-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Hairline.otf"; sourceTree = "<group>"; };
+		B49FDFD21E4D95C7002FAFAD /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		B49FDFD31E4D95C7002FAFAD /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		B49FDFD41E4D95C7002FAFAD /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
+		B49FDFD51E4D95C7002FAFAD /* Montserrat-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-UltraLight.otf"; sourceTree = "<group>"; };
+		B49FDFD61E4D95C7002FAFAD /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
+		B49FDFE21E4DCBF0002FAFAD /* GLFMarkerDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLFMarkerDomain.swift; sourceTree = "<group>"; };
+		B49FDFE61E4F592F002FAFAD /* GLFGolfCourseDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLFGolfCourseDetailsCell.swift; sourceTree = "<group>"; };
+		B4E882C71E506A17001FC7C0 /* GLFNetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLFNetworkHelper.swift; sourceTree = "<group>"; };
+		B4E882CA1E5087D0001FC7C0 /* GLFMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLFMarkerView.swift; sourceTree = "<group>"; };
+		DFD29560A1A5819E462806CA /* Pods_GolfzingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GolfzingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B46D36D81E4B6C0C00556F69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318CB46EBC9A9C695998300F /* Pods_Golfzing.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46D36EC1E4B6C0C00556F69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3245C4BB3416498A4AFD1B6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DD6C299D83485FE8CF3C4AD /* Pods_Golfzing.framework */,
+				DFD29560A1A5819E462806CA /* Pods_GolfzingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64E2C26C68B75CA78AE8CDD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5B503A5D8C12B06FF9E213D /* Pods-Golfzing.debug.xcconfig */,
+				1C884E303792C1B60DB7B1FC /* Pods-Golfzing.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B44CB7831E4D85E100E22B93 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B44CB7991E4D872500E22B93 /* Common */,
+				B44CB7901E4D861000E22B93 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B44CB7851E4D85E100E22B93 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				B44CB7931E4D863C00E22B93 /* GLFHomeDomain.swift */,
+				B49FDFE21E4DCBF0002FAFAD /* GLFMarkerDomain.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		B44CB7861E4D85E100E22B93 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B49FDFCC1E4D95C7002FAFAD /* Fonts */,
+				B44CB7871E4D85E100E22B93 /* Assets.xcassets */,
+				B44CB7881E4D85E100E22B93 /* LaunchScreen.storyboard */,
+				B44CB78A1E4D85E100E22B93 /* Main.storyboard */,
+				B45489AF1E502E7B00BC75CE /* GLFMarkerView.xib */,
+				B44CB7971E4D868400E22B93 /* GLFMockData.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B44CB7901E4D861000E22B93 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B44CB7911E4D861000E22B93 /* GLFHomeVC.swift */,
+				B45489AD1E501B7700BC75CE /* GLFMapViewHelper.swift */,
+				B45489AB1E501B4A00BC75CE /* GLFHomeCollectionViewHelper.swift */,
+				B44CB7951E4D865000E22B93 /* GLFHomeManager.swift */,
+				B49FDFE61E4F592F002FAFAD /* GLFGolfCourseDetailsCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B44CB7991E4D872500E22B93 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B44CB79A1E4D873A00E22B93 /* GLFManager.swift */,
+				B44CB79C1E4D874F00E22B93 /* GLFUtils.swift */,
+				B4E882C91E5087BB001FC7C0 /* Maps Related */,
+				B4E882C61E5069F2001FC7C0 /* Network Layer */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B46D36D21E4B6C0B00556F69 = {
+			isa = PBXGroup;
+			children = (
+				B46D36DD1E4B6C0C00556F69 /* Golfzing */,
+				B46D36F21E4B6C0C00556F69 /* GolfzingTests */,
+				B46D36DC1E4B6C0C00556F69 /* Products */,
+				64E2C26C68B75CA78AE8CDD3 /* Pods */,
+				3245C4BB3416498A4AFD1B6C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B46D36DC1E4B6C0C00556F69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B46D36DB1E4B6C0C00556F69 /* Golfzing.app */,
+				B46D36EF1E4B6C0C00556F69 /* GolfzingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B46D36DD1E4B6C0C00556F69 /* Golfzing */ = {
+			isa = PBXGroup;
+			children = (
+				B46D36DE1E4B6C0C00556F69 /* AppDelegate.swift */,
+				B44CB7771E4C46CD00E22B93 /* Golfzing-Bridging-Header.h */,
+				B46D36EA1E4B6C0C00556F69 /* Info.plist */,
+				B44CB7831E4D85E100E22B93 /* Modules */,
+				B44CB7851E4D85E100E22B93 /* Data Models */,
+				B44CB7861E4D85E100E22B93 /* Resources */,
+			);
+			path = Golfzing;
+			sourceTree = "<group>";
+		};
+		B46D36F21E4B6C0C00556F69 /* GolfzingTests */ = {
+			isa = PBXGroup;
+			children = (
+				B46D36F31E4B6C0C00556F69 /* GolfzingTests.swift */,
+				B46D36F51E4B6C0C00556F69 /* Info.plist */,
+			);
+			path = GolfzingTests;
+			sourceTree = "<group>";
+		};
+		B49FDFCC1E4D95C7002FAFAD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B49FDFCD1E4D95C7002FAFAD /* Montserrat_Fonts */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B49FDFCD1E4D95C7002FAFAD /* Montserrat_Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B49FDFCE1E4D95C7002FAFAD /* Montserrat-Black.otf */,
+				B49FDFCF1E4D95C7002FAFAD /* Montserrat-Bold.otf */,
+				B49FDFD01E4D95C7002FAFAD /* Montserrat-ExtraBold.otf */,
+				B49FDFD11E4D95C7002FAFAD /* Montserrat-Hairline.otf */,
+				B49FDFD21E4D95C7002FAFAD /* Montserrat-Light.otf */,
+				B49FDFD31E4D95C7002FAFAD /* Montserrat-Regular.otf */,
+				B49FDFD41E4D95C7002FAFAD /* Montserrat-SemiBold.otf */,
+				B49FDFD51E4D95C7002FAFAD /* Montserrat-UltraLight.otf */,
+				B49FDFD61E4D95C7002FAFAD /* SIL Open Font License.txt */,
+			);
+			path = Montserrat_Fonts;
+			sourceTree = "<group>";
+		};
+		B4E882C61E5069F2001FC7C0 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B4E882C71E506A17001FC7C0 /* GLFNetworkHelper.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		B4E882C91E5087BB001FC7C0 /* Maps Related */ = {
+			isa = PBXGroup;
+			children = (
+				B4E882CA1E5087D0001FC7C0 /* GLFMarkerView.swift */,
+			);
+			path = "Maps Related";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B46D36DA1E4B6C0C00556F69 /* Golfzing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B46D36F81E4B6C0C00556F69 /* Build configuration list for PBXNativeTarget "Golfzing" */;
+			buildPhases = (
+				347335F291A68387F7B104BB /* [CP] Check Pods Manifest.lock */,
+				B46D36D71E4B6C0C00556F69 /* Sources */,
+				B46D36D81E4B6C0C00556F69 /* Frameworks */,
+				B46D36D91E4B6C0C00556F69 /* Resources */,
+				05F48D93795AB1261F9B204D /* [CP] Embed Pods Frameworks */,
+				DFD04DDB8683D78A21FF98C8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Golfzing;
+			productName = Golfzing;
+			productReference = B46D36DB1E4B6C0C00556F69 /* Golfzing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B46D36EE1E4B6C0C00556F69 /* GolfzingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B46D36FB1E4B6C0C00556F69 /* Build configuration list for PBXNativeTarget "GolfzingTests" */;
+			buildPhases = (
+				B46D36EB1E4B6C0C00556F69 /* Sources */,
+				B46D36EC1E4B6C0C00556F69 /* Frameworks */,
+				B46D36ED1E4B6C0C00556F69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B46D36F11E4B6C0C00556F69 /* PBXTargetDependency */,
+			);
+			name = GolfzingTests;
+			productName = GolfzingTests;
+			productReference = B46D36EF1E4B6C0C00556F69 /* GolfzingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B46D36D31E4B6C0B00556F69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = myCompany;
+				TargetAttributes = {
+					B46D36DA1E4B6C0C00556F69 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = D6J9AYB65B;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					B46D36EE1E4B6C0C00556F69 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B46D36DA1E4B6C0C00556F69;
+					};
+				};
+			};
+			buildConfigurationList = B46D36D61E4B6C0B00556F69 /* Build configuration list for PBXProject "Golfzing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B46D36D21E4B6C0B00556F69;
+			productRefGroup = B46D36DC1E4B6C0C00556F69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B46D36DA1E4B6C0C00556F69 /* Golfzing */,
+				B46D36EE1E4B6C0C00556F69 /* GolfzingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B46D36D91E4B6C0C00556F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49FDFD91E4D95C7002FAFAD /* Montserrat-ExtraBold.otf in Resources */,
+				B44CB7981E4D868400E22B93 /* GLFMockData.plist in Resources */,
+				B49FDFD71E4D95C7002FAFAD /* Montserrat-Black.otf in Resources */,
+				B49FDFDC1E4D95C7002FAFAD /* Montserrat-Regular.otf in Resources */,
+				B49FDFDE1E4D95C7002FAFAD /* Montserrat-UltraLight.otf in Resources */,
+				B44CB78F1E4D85E100E22B93 /* Main.storyboard in Resources */,
+				B49FDFDF1E4D95C7002FAFAD /* SIL Open Font License.txt in Resources */,
+				B45489B01E502E7B00BC75CE /* GLFMarkerView.xib in Resources */,
+				B44CB78D1E4D85E100E22B93 /* Assets.xcassets in Resources */,
+				B44CB78E1E4D85E100E22B93 /* LaunchScreen.storyboard in Resources */,
+				B49FDFDD1E4D95C7002FAFAD /* Montserrat-SemiBold.otf in Resources */,
+				B49FDFDA1E4D95C7002FAFAD /* Montserrat-Hairline.otf in Resources */,
+				B49FDFD81E4D95C7002FAFAD /* Montserrat-Bold.otf in Resources */,
+				B49FDFDB1E4D95C7002FAFAD /* Montserrat-Light.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46D36ED1E4B6C0C00556F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05F48D93795AB1261F9B204D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Golfzing/Pods-Golfzing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		347335F291A68387F7B104BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DFD04DDB8683D78A21FF98C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Golfzing/Pods-Golfzing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B46D36D71E4B6C0C00556F69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44CB7961E4D865000E22B93 /* GLFHomeManager.swift in Sources */,
+				B49FDFE71E4F592F002FAFAD /* GLFGolfCourseDetailsCell.swift in Sources */,
+				B45489AC1E501B4A00BC75CE /* GLFHomeCollectionViewHelper.swift in Sources */,
+				B46D36DF1E4B6C0C00556F69 /* AppDelegate.swift in Sources */,
+				B4E882CB1E5087D0001FC7C0 /* GLFMarkerView.swift in Sources */,
+				B49FDFE31E4DCBF0002FAFAD /* GLFMarkerDomain.swift in Sources */,
+				B45489AE1E501B7700BC75CE /* GLFMapViewHelper.swift in Sources */,
+				B4E882C81E506A17001FC7C0 /* GLFNetworkHelper.swift in Sources */,
+				B44CB7941E4D863C00E22B93 /* GLFHomeDomain.swift in Sources */,
+				B44CB79D1E4D874F00E22B93 /* GLFUtils.swift in Sources */,
+				B44CB7921E4D861000E22B93 /* GLFHomeVC.swift in Sources */,
+				B44CB79B1E4D873A00E22B93 /* GLFManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46D36EB1E4B6C0C00556F69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46D36F41E4B6C0C00556F69 /* GolfzingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B46D36F11E4B6C0C00556F69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B46D36DA1E4B6C0C00556F69 /* Golfzing */;
+			targetProxy = B46D36F01E4B6C0C00556F69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B44CB7881E4D85E100E22B93 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B44CB7891E4D85E100E22B93 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B44CB78A1E4D85E100E22B93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B44CB78B1E4D85E100E22B93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B46D36F61E4B6C0C00556F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B46D36F71E4B6C0C00556F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B46D36F91E4B6C0C00556F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5B503A5D8C12B06FF9E213D /* Pods-Golfzing.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D6J9AYB65B;
+				INFOPLIST_FILE = Golfzing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.Golfzing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Golfzing/Golfzing-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B46D36FA1E4B6C0C00556F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C884E303792C1B60DB7B1FC /* Pods-Golfzing.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D6J9AYB65B;
+				INFOPLIST_FILE = Golfzing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.Golfzing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Golfzing/Golfzing-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B46D36FC1E4B6C0C00556F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GolfzingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.GolfzingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Golfzing.app/Golfzing";
+			};
+			name = Debug;
+		};
+		B46D36FD1E4B6C0C00556F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GolfzingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.GolfzingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Golfzing.app/Golfzing";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B46D36D61E4B6C0B00556F69 /* Build configuration list for PBXProject "Golfzing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B46D36F61E4B6C0C00556F69 /* Debug */,
+				B46D36F71E4B6C0C00556F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B46D36F81E4B6C0C00556F69 /* Build configuration list for PBXNativeTarget "Golfzing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B46D36F91E4B6C0C00556F69 /* Debug */,
+				B46D36FA1E4B6C0C00556F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B46D36FB1E4B6C0C00556F69 /* Build configuration list for PBXNativeTarget "GolfzingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B46D36FC1E4B6C0C00556F69 /* Debug */,
+				B46D36FD1E4B6C0C00556F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B46D36D31E4B6C0B00556F69 /* Project object */;
+}
